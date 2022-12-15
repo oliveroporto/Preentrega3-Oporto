@@ -1,0 +1,122 @@
+.navbar-brand {
+  color: white;
+  text-shadow: 0 0 8px black; }
+
+.media {
+  margin-top: 40px;
+  text-align: center;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.imagen-index {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 70%; }
+
+.galeria-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 300px 300px 300px;
+  margin-top: 45px;
+  padding-left: 70px;
+  padding-right: 70px; }
+  .galeria-grid-container .galeria-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center; }
+  .galeria-grid-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    filter: blur(2px);
+    transition: filter 0.3s ease-in; }
+    .galeria-grid-container img:hover {
+      filter: blur(0px); }
+
+.img-fluid {
+  filter: sepia(60%); }
+  .img-fluid:hover {
+    filter: none; }
+
+.imagen-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.spotify-edda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px; }
+
+@media screen and (max-width: 1024px) {
+  .spotify-edda {
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (max-width: 800px) {
+  .galeria-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    margin-top: 45px;
+    padding-left: 70px;
+    padding-right: 70px; } }
+
+@media screen and (max-width: 480px) {
+  .galeria-grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    margin-top: 45px;
+    padding-left: 70px;
+    padding-right: 70px; } }
+
+form {
+  padding: 60px;
+  max-width: 400px;
+  background-color: aliceblue;
+  margin: 0 auto; }
+  form input, form textarea {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    color: #525c66;
+    font-size: 1em;
+    resize: none; }
+  form .enviar {
+    display: block;
+    background-color: #0095eb;
+    padding: 10px 45px 10px 45px;
+    border: 0;
+    font-size: 1em;
+    color: white;
+    font-family: "Roboto", sans-serif; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 15px;
+  background-color: black; }
+  footer .instagram {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px; }
+    footer .instagram:hover {
+      background-color: aliceblue; }
+  footer .redes {
+    align-items: center;
+    text-align: center; }
+    footer .redes a {
+      font-size: xx-large; }
+  footer .copyright {
+    color: aliceblue; }

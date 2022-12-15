@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 15px;
+    background-color: $color-negro;
+   
+     
+    .instagram{
+        border-radius: 5px;
+        @include sizes(50px, 50px)
+        
+        }
+
+    
+        @extend .instagram
+    }
+    
+        
+
+    .redes {
+        align-items: center;
+        text-align: center;
+        a {
+            font-size:xx-large;
+        }
+    }
+    .copyright {
+        color: $color-aliceblue;
+    }
+

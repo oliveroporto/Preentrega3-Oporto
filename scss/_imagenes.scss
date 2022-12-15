@@ -1,0 +1,50 @@
+.imagen-index {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    @include sizes(70%,70%)
+    
+}
+
+.galeria-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 300px 300px 300px;
+    margin-top: 45px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    .galeria-item {
+        background-color: $color-galeria;
+        border: 1px solid $color-negro;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        }
+
+        & img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        filter: blur(2px);
+        transition: filter 0.3s ease-in;
+        
+            &:hover {
+            filter: blur(0px);
+            }
+        }
+    }
+.img-fluid{
+    filter: sepia(60%);
+
+    &:hover{
+        filter: none;
+        }
+    }
+
+.imagen-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

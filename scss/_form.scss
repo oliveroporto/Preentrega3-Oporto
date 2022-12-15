@@ -1,0 +1,27 @@
+    form{
+    padding: 60px;
+    max-width: 400px;
+    background-color: $color-aliceblue;
+    margin: 0 auto;
+  
+      input, textarea{
+        font-family: "Roboto", sans-serif;
+        width: 100%;
+        box-sizing: border-box; 
+        border: none; 
+        color: $color-formulario; 
+        font-size: 1em;
+        resize: none; 
+        }
+        .enviar {
+        display: block;
+        background-color: $color-celeste;
+        padding: 10px 45px 10px 45px;
+        border: 0;
+        font-size: 1em; 
+        color: $color-blanco;
+        font-family: "Roboto", sans-serif;
+        
+        }
+
+}
